@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +8,18 @@
 
 body {
     background-color: #202225;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(136, 150, 160);
+    --third-color: #333;
 }
 
 /**
@@ -131,29 +139,32 @@ CONTENT
 }
 
 
-.content-comment {
+.content-about {
     position: relative;
     display: flex;
     width: 80%;
-    height: 200px;
-    margin-top: 100px;
+    height: 300px;
     padding-left: 70px;
+    align-items: center;
 }
 
-.content-comment_author {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    border-radius: 50%;
-    top: -50px;
-    left: -50px;
-    overflow: hidden;
+.content-about_left, .content-about_right {
+    display: flex;
+    margin: 0 30px;
 }
 
-.content-comment_author img {
-    width: 100%;
-    height: 100%;
+.content-about_left {
+     flex: .3;
+}
+
+.content-about_left img {
+    width: 400px;
+}
+
+.content-about_right {
+    display: flex;
+    flex-direction: column;
+    flex: .7;
 }
 
 /**
@@ -172,10 +183,18 @@ FOOTER
 
 .footer-part_left, .footer-part_right {
     display: flex;
-    flex: .5;
     height: 100%;
     justify-content: space-evenly;
 }
+
+.footer-part_left {
+    flex: .3;
+}
+
+.footer-part_right {
+    flex: .7;
+}
+
 
 .footer-part_right h2 {
     margin: 30px;
@@ -188,8 +207,17 @@ FOOTER
 }
 
 .footer-part_links a {
+    display: flex;
+    align-items: center;
     margin: 5px;
     transition: ease-in-out .2s;
+    color: var(--secondary-color);
+}
+
+.footer-part_links a > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .footer-part_links a:hover {

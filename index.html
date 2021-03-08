@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Les Films de Plein Air</title>
 </head>
 <body>
 
-<div class="navBar">
+<header class="navBar">
     <div class="navBarIcon">
         <img alt="film-arts" src="assets/logo/film-arts.svg">
     </div>
@@ -21,25 +20,29 @@
         <a class="text_light" href="#">Réservation</a>
         <a class="text_light" href="#">Contact</a>
     </nav>
-</div>
-<header id="home" class="headerContainer">
-    <video autoplay loop data-mask="70" playsinline poster="assets/video/watching-a-movie.mp4">
+</header>
+<section id="home" class="headerContainer">
+    <video autoplay loop data-mask="70" playsinline poster="assets/video/watching-a-movie.png">
         <source src="assets/video/watching-a-movie.mp4" type="video/mp4">
     </video>
     <div class="headerTitle">
         <h1 class="text_regular">Les Films de Plein Air</h1>
         <span class="text_light">Faire découvrir des films d'auteur au grand public</span>
     </div>
-</header>
+</section>
 <main class="content">
-    <div class="content-comment" id="association">
-        <div class="content-comment_author">
-            <img alt="authorAvatar" src="assets/imgs/author.jpg">
+    <div class="content-about" id="association">
+        <div class="content-about_left">
+            <img src="assets/logo/film-arts.svg" alt="filt-arts">
         </div>
-        <p class="text_regular">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget sem massa. Sed dictum, lacus et euismod feugiat, massa sapien tristique ante, ac suscipit ex tortor pharetra ex. Aenean id tristique arcu, a pellentesque ex. Phasellus lacus dui, placerat a metus sit amet, dapibus vehicula leo. Cras sagittis sem nulla, vitae viverra sem fringilla ut. Aenean condimentum eleifend metus sit amet finibus. Mauris et odio efficitur, faucibus tellus ac, porttitor tortor. Proin sodales turpis dolor, sed congue turpis molestie vitae. Maecenas sit amet massa ipsum.
-            Maecenas vitae nulla dolor. Morbi ut posuere urna. Duis lacus purus, auctor at condimen risus feugiat vel. Donec scelerisque congue leo id suscipit. Nunc leo tellus, facilisis eu enim non, tristique mattis orci. Morbi quis magna porta mauris scelerisque laoreet eget et diam. Vivamus vehicula sem eu magna scelerisque, eu consequat velit scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi tincidunt ligula vel massa fermentum, id convallis eros facilisis. Donec suscipit sodales dui sit amet dictum. Proin libero lorem, vestibulum ut enim sed, posuere lacinia felis. Morbi vulputate dui magna, quis blandit erat congue vitae. Vestibulum sit amet erat eget nibh semper molestie a eget dolor. Fusce vitae arcu id mi tempor finibus vitae in tortor. Integer porta urna eu congue placerat. Integer fermentum mi id velit pharetra tincidunt.
-        </p>
+        <div class="content-about_right">
+            <h2 class="text_regular">L'association Les films de Plein Air</h2>
+            <p class="text_light">
+                L'association Les films de Plein Air a été créée dans le but de promouvoir les films d'auteur auprès du grand public.
+                Elle a vu le jour en 2019, des bénévoles passionnées s'occupent d'organiser divers évènements afin de partager leurs connaissances.
+                Plusieurs projets sont en préparations, notament le festival des Films de Plein Air.
+            </p>
+        </div>
     </div>
 </main>
 <footer class="footer">
@@ -48,21 +51,55 @@
     </div>
     <div class="footer-part_right">
         <div class="footer-part_links">
-            <h2 class="text_regular">LIENS</h2>
-            <a class="text_light" href="#home">Accueil</a>
-            <a class="text_light" href="#association">Association</a>
-            <a class="text_light" href="#">Festival</a>
-            <a class="text_light" href="#">Programme</a>
-            <a class="text_light" href="#">Réservation</a>
-            <a class="text_light" href="#">Contact</a>
+            <h2 class="text_regular">LIENS UTILES</h2>
+            <a href="#home">Accueil</a>
+            <a  href="#association">Association</a>
+            <a  href="#">Festival</a>
+            <a  href="#">Programme</a>
+            <a  href="#">Réservation</a>
+            <a  href="#">Contact</a>
         </div>
         <div class="footer-part_links">
-            <h2 class="text_regular">RESEAUX</h2>
+            <h2 class="text_regular">SUIVEZ-NOUS</h2>
             <a class="text_light" href="#">Facebook</a>
             <a class="text_light" href="#">Twitter</a>
             <a class="text_light" href="#">Instagram</a>
         </div>
+        <div class="footer-part_links">
+            <h2 class="text_regular">RGPD</h2>
+            <a class="text_light" href="#">Conditions d'utilisation</a>
+            <a class="text_light" href="#">Mentions légales</a>
+            <a class="text_light" href="#">Cookies</a>
+        </div>
+        <div class="footer-part_links">
+            <h2 class="text_regular">CONTACTEZ-NOUS</h2>
+            <a class="text_light" href="#">
+                <img alt="email" src="assets/logo/map-marker.png">
+                310 chemin des assos, 75000 Paris
+            </a>
+            <a class="text_light" href="mailto:contact@filmsdepleinair.org">
+                <img alt="email" src="assets/logo/email.png">
+                contact@filmsdepleinair.org
+            </a>
+            <a class="text_light" href="tel:+33611223344">
+                <img alt="email" src="assets/logo/phone.png">
+                06 11 22 33 44
+            </a>
+        </div>
     </div>
 </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            let navBar = $('.navBar');
+            if ($(document).scrollTop() > 200) {
+                navBar.css('background-color', 'rgba(0, 0, 0, .8)');
+            } else {
+                navBar.css('background-color', 'unset');
+            }
+        });
+    });
+</script>
 </html>
