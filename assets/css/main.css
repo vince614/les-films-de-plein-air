@@ -132,10 +132,9 @@ CONTENT
     margin-top: -5px;
     display: flex;
     width: 100vw;
-    padding: 15px;
-    height: 200px;
     z-index: 5;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -143,7 +142,6 @@ CONTENT
     position: relative;
     display: flex;
     width: 80%;
-    height: 300px;
     padding-left: 70px;
     align-items: center;
 }
@@ -165,6 +163,115 @@ CONTENT
     display: flex;
     flex-direction: column;
     flex: .7;
+}
+
+.content-programme {
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-programme h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.content-programme_container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+
+/**
+PROGRAMME CARD
+ */
+
+.programme-card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.programme-card_header {
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.programme-card_header img {
+    filter: blur(1px);
+    width: 100%;
+}
+
+.programme-card_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 5px 15px;
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.programme-card_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 370px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #333333;
+    cursor: pointer;
+    border: solid 2px rgba(0, 0, 0, .5);
+}
+
+.programme-card_button img {
+    width: 25px;
+    height: 25px;
+}
+
+.programme-card_infos {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: #202225;
+    flex-direction: column;
+}
+
+.programme-card_infos__item {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.programme-card_infos__item img {
+    width: 20px;
+    height: 20px;
+}
+
+.programme-card_infos__item span {
+    margin: 0 5px;
 }
 
 /**

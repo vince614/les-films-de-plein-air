@@ -3,5 +3,8 @@
   <component name="MagicentoSettings">
     <option name="pathToMage" value="$PROJECT_DIR$/app/Mage.php" />
     <option name="enabled" value="false" />
+    <option name="pathsToMagentoSerialized" value="" />
+    <option name="customSignatures" value="Mage_Sales_Model_Order.getPaymentsCollection = Mage_Sales_Model_Resource_Order_Payment_Collection;;MODEL=sales/order.getPaymentsCollection==RESOURCEMODEL=sales/order_payment_collection" />
+    <option name="d" value="iqfLTgFE1qYs+wcawcl+NTQHmjU8XP4XD+P54rs/d8TIVeRsqnscFBjNSwY0JgzM7oFZ+1X7S5yS&#13;&#10;LIDyUatHNm/rB5/Cl/Qs1mbOBVYroTAcDebIMg15mbJDzSrQce7nlYhmE8FoFDaAzfBD97Xl1hrf&#13;&#10;GgwbLleHj+ag44Czvog=&#13;&#10;" />
   </component>
 </project>
