@@ -275,6 +275,105 @@ PROGRAMME CARD
 }
 
 /**
+PROGRAMME
+ */
+
+.content-booking {
+    display: flex;
+    width: 100%;
+    background-color: #202225;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+.content-booking > h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.formContainer {
+    padding: 20px;
+    width: 650px;
+    margin: 70px auto 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgba(255, 255, 255, .05);
+    border: solid 2px rgba(255,255,255,0.09);
+    border-radius: 10px;
+}
+
+.formSection {
+    margin-bottom: 30px;
+}
+
+.formSectionTitle[isRequired="true"]:after {
+    content: '*';
+    color: rgb(180, 10, 10);
+}
+
+.formSelection {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid grey;
+    padding-left: 5px;
+    background-color: transparent;
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.formSelection option {
+    background-color: #18191C;
+}
+
+.formValidationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formValidationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    background-color: #7F83D7;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+.formValidationButton:hover {
+    cursor: pointer;
+}
+
+.inputForm {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .10);
+    border: 2px solid #333;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.inputForm::placeholder {
+    font-weight: lighter;
+}
+
+.inputForm:focus {
+    outline: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 3px;
+}
+
+/**
 FOOTER
  */
 

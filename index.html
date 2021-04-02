@@ -31,6 +31,8 @@
     </div>
 </section>
 <main class="content">
+
+    <!-- ASSOCIATION -->
     <div class="content-about" id="association">
         <div class="content-about_left">
             <img src="assets/logo/film-arts.svg" alt="filt-arts">
@@ -44,6 +46,8 @@
             </p>
         </div>
     </div>
+
+    <!-- PROGRAMME -->
     <div class="content-programme" id="programme">
         <h2 class="text_regular">Notre sélection</h2>
         <div class="content-programme_container">
@@ -288,6 +292,87 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- RESERVATION -->
+    <div class="content-booking">
+        <h2 class="text_regular">Je réserve</h2>
+
+        <div class="formContainer">
+            <div class='formSection'>
+                <h2 class="formSectionTitle text_regular" isRequired="true">
+                    Nom
+                </h2>
+                <input class="inputForm" placeholder="Votre nom" type="text"/>
+            </div>
+            <div class='formSection'>
+                <h2 class="formSectionTitle text_regular" isRequired="true">
+                    Email
+                </h2>
+                <input class="inputForm" placeholder="Votre email" type="email"/>
+            </div>
+            <div class='formSection'>
+                <h2 class="formSectionTitle text_regular" isRequired="false">
+                    Téléphone
+                </h2>
+                <input class="inputForm" placeholder="Votre numéro de téléphone" type="tel"/>
+            </div>
+            <div class="formSection">
+                <h2 class="formSectionTitle text_regular" isRequired="true">
+                    Séance
+                </h2>
+                <select class="formSelection">
+                    <option value="pers">Séance</option>
+                    <optgroup label="Dimanche 5 Août 2021">
+                        <option value="film1">The Shining --&gt; 18h</option>
+                        <option value="film2">Le Parrain  --&gt; 20h</option>
+                        <option value="film3">Million Dollar Baby --&gt; 22h</option>
+                    </optgroup>
+
+                    <optgroup label="Lundi 6 Août 2021">
+                        <option value="film4">Gran Torino --&gt; 18h</option>
+                        <option value="film5">Full Metal Jacket --&gt; 20h</option>
+                        <option value="film6">Drive --&gt; 22h</option>
+                    </optgroup>
+
+                    <optgroup label="Mardi 7 Août 2021">
+                        <option value="film7">Scarface --&gt; 18h</option>
+                        <option value="film8">Will Hunting --&gt; 20h</option>
+                        <option value="film9">Apocalypse Now --&gt; 22h</option>
+                    </optgroup>
+
+                    <optgroup label="Mercredi 8 Août 2021 : 2nde Projection">
+                        <option value="film10">Gran Torino : 2nde Projection --&gt; 18h</option>
+                        <option value="film11">Apocalypse Now : 2nde Projection --&gt; 20h</option>
+                        <option value="film12">The Shining : 2nde Projection --&gt; 22h</option>
+                    </optgroup>
+
+                </select>
+            </div>
+            <div class="formSection">
+                <h2 class="formSectionTitle text_regular" isRequired="true">
+                    Nombre de personnes
+                </h2>
+                <select class="formSelection">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="formValidationContainer">
+                <a class="formValidationButton" id="submit">
+                    Réserver
+                </a>
+            </div>
+        </div>
+
     </div>
 </main>
 <footer class="footer">
