@@ -15,8 +15,8 @@
     <nav class="navLinks">
         <a class="text_light" href="#home">Accueil</a>
         <a class="text_light" href="#association">Association</a>
-        <a class="text_light" href="#">Festival</a>
-        <a class="text_light" href="#">Programme</a>
+        <a class="text_light" href="#festival">Festival</a>
+        <a class="text_light" href="#programme">Programme</a>
         <a class="text_light" href="#">Réservation</a>
         <a class="text_light" href="#">Contact</a>
     </nav>
@@ -44,6 +44,22 @@
                 Elle a vu le jour en 2019, des bénévoles passionnées s'occupent d'organiser divers évènements afin de partager leurs connaissances.
                 Plusieurs projets sont en préparations, notament le festival des Films de Plein Air.
             </p>
+        </div>
+    </section>
+
+    <!-- FESTIVAL -->
+    <section class="festival-container" id="festival">
+        <div class="festival-container_second">
+            <div class="festival_left">
+                <h2 class="text_regular">A propos du festival</h2>
+                <p class="text_light">
+                    Le festival des Films de Plein Air se déroulera du 5 au 8 Août 2020 au Parc Monceau à Paris.
+                    Pour s'y rendre L'accès est gratuit mais une réservation au préablable est conseillé.
+                </p>
+            </div>
+            <div class="festival_right">
+                <img src="assets/imgs/filmsenpleinair.jpeg" alt="films">
+            </div>
         </div>
     </section>
 
@@ -302,7 +318,7 @@
 <script>
     $(document).ready(function() {
         $(window).scroll(function() {
-            let navBar = $('.navBar');s
+            let navBar = $('.navBar');
             $(document).scrollTop() > 200 ?
                 navBar.css('background-color', 'rgba(0, 0, 0, .8)') : navBar.css('background-color', 'unset');
         });
