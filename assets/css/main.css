@@ -274,6 +274,13 @@ PROGRAMME CARD
     margin: 0 5px;
 }
 
+/* background */
+.unsacdebilles_background {background-image: url('../../assets/imgs/unsacdebilles.jpg')}
+.jaccuse_background {background-image: url('../../assets/imgs/jaccuse.jpeg')}
+.joursmax_background {background-image: url('../../assets/imgs/30joursmax.jpeg')}
+.lesmiserrables_background {background-image: url('../../assets/imgs/lesmiserables.jpeg')}
+.lejeu_background {background-image: url('../../assets/imgs/lejeu.jpeg')}
+
 /**
 PROGRAMME
  */
