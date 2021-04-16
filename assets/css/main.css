@@ -546,3 +546,71 @@ FOOTER
 .footer-part_links a:hover {
     color: white;
 }
+
+/**
+RESPONSIVE
+ */
+
+@media screen and (max-width: 1000px) {
+
+    .navLinks {
+        display: none;
+    }
+
+    .headerTitle {
+        text-align: center;
+    }
+
+    .headerTitle h1 {
+        font-size: 3.5em;
+    }
+
+    .content-about {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .festival-container_second {
+        flex-direction: column;
+    }
+
+    .festival_right img {
+        width: 80%;
+    }
+
+    .content-about_left img {
+        width: 70%;
+    }
+
+    .programme-card {
+        width: 70%;
+    }
+
+    .content-about {
+        padding: 0;
+    }
+
+    .content-about_left, .content-about_right {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .contact-container_parts {
+        flex-direction: column;
+    }
+
+    .contact-container_left iframe {
+        height: 400px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer-part_right {
+        flex-direction: column;
+    }
+}
