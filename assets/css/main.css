@@ -51,6 +51,7 @@ HEADER
     top: 0;
     filter: blur(5px);
     height: 100vh;
+    width: 100%;
 }
 
 .headerTitle {
@@ -122,6 +123,34 @@ HEADER
 
 .navLinks a:hover {
     color: white;
+}
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 11;
+}
+
+.burger img {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-navLinks {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: #202225;
+    z-index: 10;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 /**
@@ -555,6 +584,10 @@ RESPONSIVE
 
     .navLinks {
         display: none;
+    }
+
+    .burger {
+        display: block;
     }
 
     .headerTitle {

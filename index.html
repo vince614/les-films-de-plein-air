@@ -21,6 +21,17 @@
         <a class="text_light" href="#reservation">Réservation</a>
         <a class="text_light" href="#">Contact</a>
     </nav>
+    <div class="burger" id="burger">
+        <img alt="burger" src="assets/logo/burger.png">
+    </div>
+    <nav class="responsive-navLinks" id="responsive-nav">
+        <a class="text_light" href="#home">Accueil</a>
+        <a class="text_light" href="#association">Association</a>
+        <a class="text_light" href="#festival">Festival</a>
+        <a class="text_light" href="#programme">Programme</a>
+        <a class="text_light" href="#reservation">Réservation</a>
+        <a class="text_light" href="#">Contact</a>
+    </nav>
 </header>
 <section id="home" class="headerContainer">
     <video autoplay loop data-mask="70" playsinline poster="assets/video/watching-a-movie.png">
@@ -371,7 +382,28 @@
             }
         }
         prevScrollpos = currentScrollPos;
+    };
+
+    $('#burger').click(function () {
+        toggleResponsiveBar();
+    });
+
+    $('a', '#responsive-nav').each(function () {
+        $(this).click(function () {
+            toggleResponsiveBar();
+        })
+    });
+
+    function toggleResponsiveBar() {
+        let responsiveNav = $('#responsive-nav');
+        if (responsiveNav.css('display') === "none") {
+            responsiveNav.css('display', 'flex');
+        } else {
+            responsiveNav.hide(200);
+        }
     }
+
+
 </script>
 </body>
 </html>
