@@ -371,13 +371,18 @@
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
+    let width;
+    $(window).resize(function() {
+        width = $(window).width();
+    });
+
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            if ($(document).scrollTop() > 200) {
+            if ($(document).scrollTop() > 200 && width > 1000) {
                 document.getElementById("navbar").style.top = "-100px";
             }
         }
